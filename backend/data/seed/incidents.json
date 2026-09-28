@@ -1,0 +1,802 @@
+[
+  {
+    "timestamp": "2026-01-06T09:20:00+05:30",
+    "machine_id": "CV-01",
+    "line": "Assembly",
+    "system": "conveyor",
+    "shift": "A",
+    "reported_by": "Kavita Pawar",
+    "symptoms": [
+      "belt tracking to left side",
+      "parts falling at transfer point"
+    ],
+    "error_codes": [
+      "CNV-ALIGN"
+    ],
+    "downtime_minutes": 45,
+    "production_loss_units": 0,
+    "fix_applied": "Re-aligned tail pulley and tensioned belt",
+    "fix_category": "belt",
+    "parts_used": [],
+    "technician_notes": "Tail pulley bolts had loosened.",
+    "root_cause_recorded": "Belt misalignment",
+    "incident_id": "MX-0101",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-01-09T15:40:00+05:30",
+    "machine_id": "AC-01",
+    "line": "Utilities",
+    "system": "pneumatic",
+    "shift": "B",
+    "reported_by": "Sunil More",
+    "symptoms": [
+      "line pressure 5.2 bar (setpoint 6.5)",
+      "compressor running continuously"
+    ],
+    "error_codes": [
+      "AIR-PRS-LOW"
+    ],
+    "downtime_minutes": 30,
+    "production_loss_units": 0,
+    "fix_applied": "Replaced air intake filter",
+    "fix_category": "filter",
+    "parts_used": [
+      {
+        "part": "Intake filter cartridge",
+        "qty": 1,
+        "supplier": "ELGi"
+      }
+    ],
+    "technician_notes": "Filter choked with dust from road work outside.",
+    "root_cause_recorded": "Choked intake filter",
+    "incident_id": "MX-0104",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-01-13T10:05:00+05:30",
+    "machine_id": "HP-02",
+    "line": "Stamping Line 1",
+    "system": "tooling",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "burr on stamped bracket",
+      "die misaligned by ~0.3mm"
+    ],
+    "error_codes": [
+      "QLT-BURR"
+    ],
+    "downtime_minutes": 70,
+    "production_loss_units": 480,
+    "fix_applied": "Re-set die alignment and re-torqued die clamps",
+    "fix_category": "die_setup",
+    "parts_used": [],
+    "technician_notes": "Die change was rushed at shift start.",
+    "root_cause_recorded": "Die setup error",
+    "incident_id": "MX-0107",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-01-17T23:30:00+05:30",
+    "machine_id": "IM-03",
+    "line": "Plastics",
+    "system": "injection",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "flash on mold parting line",
+      "short shots intermittently"
+    ],
+    "error_codes": [
+      "INJ-FLASH"
+    ],
+    "downtime_minutes": 60,
+    "production_loss_units": 900,
+    "fix_applied": "Cleaned mold parting surface and reduced injection pressure by 5%",
+    "fix_category": "mold_clean",
+    "parts_used": [],
+    "technician_notes": "Residue on parting line.",
+    "root_cause_recorded": "Mold contamination",
+    "incident_id": "MX-0110",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-01-22T03:10:00+05:30",
+    "machine_id": "HP-04",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "oil temperature 66°C (normal 45–55°C)",
+      "main motor tripped twice",
+      "pressure dropped during stroke"
+    ],
+    "error_codes": [
+      "HYD-TEMP-HI",
+      "MTR-TRIP"
+    ],
+    "downtime_minutes": 95,
+    "production_loss_units": 720,
+    "fix_applied": "Reset motor drive and overload relay after power dip; restarted press",
+    "fix_category": "drive_reset",
+    "parts_used": [],
+    "technician_notes": "Whole plant had a voltage dip around 3am. Compressor and conveyor also tripped. Press ran normal after reset.",
+    "root_cause_recorded": "Power fluctuation (MSEDCL supply dip)",
+    "incident_id": "MX-0113",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-01-28T12:10:00+05:30",
+    "machine_id": "CNC-12",
+    "line": "Machining Bay",
+    "system": "tooling",
+    "shift": "A",
+    "reported_by": "Kavita Pawar",
+    "symptoms": [
+      "tool wear alarm",
+      "chatter marks on face"
+    ],
+    "error_codes": [
+      "TL-WEAR"
+    ],
+    "downtime_minutes": 25,
+    "production_loss_units": 60,
+    "fix_applied": "Replaced face mill inserts",
+    "fix_category": "tool_change",
+    "parts_used": [
+      {
+        "part": "Face mill inserts",
+        "qty": 10,
+        "supplier": "Sandvik Coromant"
+      }
+    ],
+    "technician_notes": "Inserts at end of life.",
+    "root_cause_recorded": "Tool wear",
+    "incident_id": "MX-0116",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-02-03T07:45:00+05:30",
+    "machine_id": "HP-06",
+    "line": "Stamping Line 2",
+    "system": "safety",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "light curtain fault, press will not cycle"
+    ],
+    "error_codes": [
+      "SAF-LC-FLT"
+    ],
+    "downtime_minutes": 40,
+    "production_loss_units": 300,
+    "fix_applied": "Cleaned and re-aligned light curtain emitter",
+    "fix_category": "sensor_recal",
+    "parts_used": [],
+    "technician_notes": "Oil mist on lens.",
+    "root_cause_recorded": "Light curtain misalignment",
+    "incident_id": "MX-0119",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-02-11T18:20:00+05:30",
+    "machine_id": "CV-01",
+    "line": "Assembly",
+    "system": "conveyor",
+    "shift": "B",
+    "reported_by": "Sunil More",
+    "symptoms": [
+      "gearbox noise",
+      "drive motor current high"
+    ],
+    "error_codes": [
+      "CNV-MTR-HI"
+    ],
+    "downtime_minutes": 80,
+    "production_loss_units": 0,
+    "fix_applied": "Regreased gearbox bearings",
+    "fix_category": "grease",
+    "parts_used": [
+      {
+        "part": "EP2 grease",
+        "qty_kg": 2,
+        "supplier": "Servo"
+      }
+    ],
+    "technician_notes": "Grease interval was overdue.",
+    "root_cause_recorded": "Lubrication overdue",
+    "incident_id": "MX-0122",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-02-19T02:40:00+05:30",
+    "machine_id": "IM-03",
+    "line": "Plastics",
+    "system": "injection",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "barrel zone 3 temperature unstable",
+      "black specks in parts"
+    ],
+    "error_codes": [
+      "INJ-TEMP-FLT"
+    ],
+    "downtime_minutes": 110,
+    "production_loss_units": 1300,
+    "fix_applied": "Replaced zone 3 heater band and thermocouple",
+    "fix_category": "heater",
+    "parts_used": [
+      {
+        "part": "Heater band 250W",
+        "qty": 1,
+        "supplier": "Watlow"
+      }
+    ],
+    "technician_notes": "Heater band burnt out.",
+    "root_cause_recorded": "Heater failure",
+    "incident_id": "MX-0125",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-02-24T11:15:00+05:30",
+    "machine_id": "AC-01",
+    "line": "Utilities",
+    "system": "pneumatic",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "dryer high dew point alarm",
+      "water in air line at press station"
+    ],
+    "error_codes": [
+      "AIR-DEW-HI"
+    ],
+    "downtime_minutes": 35,
+    "production_loss_units": 0,
+    "fix_applied": "Serviced refrigerant dryer and drained auto-drain valve",
+    "fix_category": "dryer",
+    "parts_used": [],
+    "technician_notes": "Auto drain stuck closed.",
+    "root_cause_recorded": "Dryer drain fault",
+    "incident_id": "MX-0128",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-03-02T14:30:00+05:30",
+    "machine_id": "CNC-12",
+    "line": "Machining Bay",
+    "system": "electrical",
+    "shift": "B",
+    "reported_by": "Anil Gaikwad",
+    "symptoms": [
+      "axis Y servo alarm 401"
+    ],
+    "error_codes": [
+      "SRV-401"
+    ],
+    "downtime_minutes": 55,
+    "production_loss_units": 120,
+    "fix_applied": "Reseated servo encoder cable",
+    "fix_category": "cable",
+    "parts_used": [],
+    "technician_notes": "Connector loose due to vibration.",
+    "root_cause_recorded": "Loose encoder connector",
+    "incident_id": "MX-0131",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-03-06T00:25:00+05:30",
+    "machine_id": "HP-04",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "oil temperature 69°C (normal 45–55°C)",
+      "cycle time +15%",
+      "press slowing on deep-draw stroke"
+    ],
+    "error_codes": [
+      "HYD-TEMP-HI",
+      "CYC-SLOW"
+    ],
+    "downtime_minutes": 180,
+    "production_loss_units": 1620,
+    "fix_applied": "Replaced oil cooler fan motor",
+    "fix_category": "cooling_fan",
+    "parts_used": [
+      {
+        "part": "Cooler fan motor 0.75kW",
+        "qty": 1,
+        "supplier": "Crompton Industrial"
+      }
+    ],
+    "technician_notes": "Fan bearing sounded rough, replaced it. Oil temp came down to 58°C after 1 hr. Oil looked a bit thin but level was ok.",
+    "root_cause_recorded": "Cooling fan bearing wear",
+    "incident_id": "MX-0134",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-03-10T11:30:00+05:30",
+    "machine_id": "CNC-11",
+    "line": "Machining Bay",
+    "system": "spindle",
+    "shift": "A",
+    "reported_by": "Kavita Pawar",
+    "symptoms": [
+      "spindle temperature 58°C (alarm at 55°C)",
+      "surface finish poor on bore",
+      "coolant flow low"
+    ],
+    "error_codes": [
+      "SPN-TEMP-HI",
+      "CLT-FLOW-LOW"
+    ],
+    "downtime_minutes": 90,
+    "production_loss_units": 240,
+    "fix_applied": "Cleaned coolant filter and topped up coolant",
+    "fix_category": "coolant_filter",
+    "parts_used": [
+      {
+        "part": "Coolant concentrate",
+        "qty_litres": 20,
+        "supplier": "Blaser Swisslube"
+      }
+    ],
+    "technician_notes": "Filter was packed with aluminium chips.",
+    "root_cause_recorded": "Clogged coolant filter",
+    "incident_id": "MX-0137",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-03-18T22:50:00+05:30",
+    "machine_id": "CV-01",
+    "line": "Assembly",
+    "system": "conveyor",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "emergency stop tripped randomly"
+    ],
+    "error_codes": [
+      "ESTOP-TRIP"
+    ],
+    "downtime_minutes": 20,
+    "production_loss_units": 0,
+    "fix_applied": "Replaced faulty pull-cord switch",
+    "fix_category": "switch",
+    "parts_used": [
+      {
+        "part": "Pull cord switch",
+        "qty": 1,
+        "supplier": "Schneider"
+      }
+    ],
+    "technician_notes": "Switch contact worn.",
+    "root_cause_recorded": "Faulty E-stop switch",
+    "incident_id": "MX-0140",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-03-24T09:10:00+05:30",
+    "machine_id": "IM-03",
+    "line": "Plastics",
+    "system": "injection",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "mold temperature controller alarm"
+    ],
+    "error_codes": [
+      "MTC-ALM"
+    ],
+    "downtime_minutes": 45,
+    "production_loss_units": 500,
+    "fix_applied": "Cleaned MTC water filter and bled air",
+    "fix_category": "filter",
+    "parts_used": [],
+    "technician_notes": "Scale in filter.",
+    "root_cause_recorded": "MTC filter scaling",
+    "incident_id": "MX-0143",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-04-02T23:40:00+05:30",
+    "machine_id": "HP-04",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "oil temperature 71°C (normal 45–55°C)",
+      "cycle time +18%",
+      "pressure fluctuation ±12 bar"
+    ],
+    "error_codes": [
+      "HYD-TEMP-HI",
+      "PRS-FLUCT"
+    ],
+    "downtime_minutes": 210,
+    "production_loss_units": 1850,
+    "fix_applied": "Flushed and refilled hydraulic oil",
+    "fix_category": "oil_change",
+    "parts_used": [
+      {
+        "part": "Hydraulic oil ISO VG 68",
+        "qty_litres": 180,
+        "supplier": "Vardhan Lubricants",
+        "batch": "VL-2403-B"
+      }
+    ],
+    "technician_notes": "Oil looked darker than usual and slightly thin. Refilled from new stock.",
+    "root_cause_recorded": "Oil degradation (suspected)",
+    "incident_id": "MX-0146",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-04-07T10:40:00+05:30",
+    "machine_id": "CNC-12",
+    "line": "Machining Bay",
+    "system": "tooling",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "drill breakage on M8 tapping hole"
+    ],
+    "error_codes": [
+      "TL-BRK"
+    ],
+    "downtime_minutes": 30,
+    "production_loss_units": 90,
+    "fix_applied": "Replaced drill and corrected feed rate in program",
+    "fix_category": "tool_change",
+    "parts_used": [
+      {
+        "part": "Carbide drill 6.8mm",
+        "qty": 2,
+        "supplier": "Sandvik Coromant"
+      }
+    ],
+    "technician_notes": "Feed rate was edited wrongly in last program update.",
+    "root_cause_recorded": "Wrong feed rate",
+    "incident_id": "MX-0149",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-04-14T17:25:00+05:30",
+    "machine_id": "AC-01",
+    "line": "Utilities",
+    "system": "pneumatic",
+    "shift": "B",
+    "reported_by": "Sunil More",
+    "symptoms": [
+      "compressor oil carryover in air line"
+    ],
+    "error_codes": [
+      "AIR-OIL"
+    ],
+    "downtime_minutes": 50,
+    "production_loss_units": 0,
+    "fix_applied": "Replaced air-oil separator element",
+    "fix_category": "filter",
+    "parts_used": [
+      {
+        "part": "Separator element",
+        "qty": 1,
+        "supplier": "ELGi"
+      }
+    ],
+    "technician_notes": "Separator due for change.",
+    "root_cause_recorded": "Separator end of life",
+    "incident_id": "MX-0152",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-04-22T06:55:00+05:30",
+    "machine_id": "HP-06",
+    "line": "Stamping Line 2",
+    "system": "tooling",
+    "shift": "A",
+    "reported_by": "Kavita Pawar",
+    "symptoms": [
+      "die punch chipped",
+      "slug pulling"
+    ],
+    "error_codes": [
+      "QLT-SLUG"
+    ],
+    "downtime_minutes": 65,
+    "production_loss_units": 420,
+    "fix_applied": "Replaced punch and re-ground die clearance",
+    "fix_category": "die_setup",
+    "parts_used": [
+      {
+        "part": "Punch 12mm",
+        "qty": 1,
+        "supplier": "Misumi"
+      }
+    ],
+    "technician_notes": "Punch fatigue.",
+    "root_cause_recorded": "Punch wear",
+    "incident_id": "MX-0155",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-04-29T16:50:00+05:30",
+    "machine_id": "HP-02",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "B",
+    "reported_by": "Sunil More",
+    "symptoms": [
+      "pressure drop 18 bar under load",
+      "oil seepage at main cylinder gland",
+      "oil temperature 63°C"
+    ],
+    "error_codes": [
+      "PRS-LOW",
+      "HYD-TEMP-HI"
+    ],
+    "downtime_minutes": 150,
+    "production_loss_units": 1100,
+    "fix_applied": "Replaced main cylinder gland seals",
+    "fix_category": "seals",
+    "parts_used": [
+      {
+        "part": "Cylinder gland seal kit 160mm",
+        "qty": 1,
+        "supplier": "Parker Hannifin"
+      }
+    ],
+    "technician_notes": "Seals were hard and cracked for only 8 months of use. Had to top up oil more than usual this month.",
+    "root_cause_recorded": "Seal wear",
+    "incident_id": "MX-0158",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-05-04T00:35:00+05:30",
+    "machine_id": "CV-01",
+    "line": "Assembly",
+    "system": "conveyor",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "belt splice lifting"
+    ],
+    "error_codes": [
+      "CNV-SPLICE"
+    ],
+    "downtime_minutes": 90,
+    "production_loss_units": 0,
+    "fix_applied": "Re-vulcanised belt splice",
+    "fix_category": "belt",
+    "parts_used": [],
+    "technician_notes": "Old splice.",
+    "root_cause_recorded": "Splice failure",
+    "incident_id": "MX-0161",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-05-08T13:05:00+05:30",
+    "machine_id": "CNC-11",
+    "line": "Machining Bay",
+    "system": "spindle",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "spindle temperature 57°C",
+      "coolant flow low",
+      "dimensional drift on bore 0.02mm"
+    ],
+    "error_codes": [
+      "SPN-TEMP-HI",
+      "CLT-FLOW-LOW"
+    ],
+    "downtime_minutes": 120,
+    "production_loss_units": 310,
+    "fix_applied": "Replaced coolant filter element and added chip conveyor magnetic separator",
+    "fix_category": "coolant_filter",
+    "parts_used": [
+      {
+        "part": "Coolant filter element 25µm",
+        "qty": 1,
+        "supplier": "Blaser Swisslube"
+      },
+      {
+        "part": "Magnetic separator",
+        "qty": 1,
+        "supplier": "Eriez India"
+      }
+    ],
+    "technician_notes": "Added separator so chips don't reach the filter. Should stop this for good.",
+    "root_cause_recorded": "Clogged coolant filter (permanent fix: separator)",
+    "incident_id": "MX-0164",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-05-12T15:10:00+05:30",
+    "machine_id": "IM-03",
+    "line": "Plastics",
+    "system": "injection",
+    "shift": "B",
+    "reported_by": "Sunil More",
+    "symptoms": [
+      "hydraulic clamp slow to close",
+      "ejector sticking"
+    ],
+    "error_codes": [
+      "INJ-CLAMP-SLOW"
+    ],
+    "downtime_minutes": 70,
+    "production_loss_units": 800,
+    "fix_applied": "Cleaned ejector pins and adjusted clamp speed profile",
+    "fix_category": "mold_clean",
+    "parts_used": [],
+    "technician_notes": "Ejector pins dry.",
+    "root_cause_recorded": "Ejector sticking",
+    "incident_id": "MX-0167",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-05-21T01:15:00+05:30",
+    "machine_id": "HP-04",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "oil temperature 73°C (normal 45–55°C)",
+      "relief valve chattering",
+      "cycle time +20%"
+    ],
+    "error_codes": [
+      "HYD-TEMP-HI",
+      "PRV-NOISE"
+    ],
+    "downtime_minutes": 240,
+    "production_loss_units": 2150,
+    "fix_applied": "Replaced main pressure relief valve",
+    "fix_category": "relief_valve",
+    "parts_used": [
+      {
+        "part": "Pressure relief valve DBDS 20",
+        "qty": 1,
+        "supplier": "Bosch Rexroth"
+      },
+      {
+        "part": "Hydraulic oil ISO VG 68",
+        "qty_litres": 40,
+        "supplier": "Vardhan Lubricants",
+        "batch": "VL-2405-A"
+      }
+    ],
+    "technician_notes": "Valve seat was scored. Topped up 40L oil. Oil smells slightly burnt.",
+    "root_cause_recorded": "Relief valve wear",
+    "incident_id": "MX-0170",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-05-26T12:45:00+05:30",
+    "machine_id": "CNC-12",
+    "line": "Machining Bay",
+    "system": "electrical",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "coolant pump motor tripped"
+    ],
+    "error_codes": [
+      "CLT-MTR-TRIP"
+    ],
+    "downtime_minutes": 40,
+    "production_loss_units": 100,
+    "fix_applied": "Replaced coolant pump motor contactor",
+    "fix_category": "switch",
+    "parts_used": [
+      {
+        "part": "Contactor 9A",
+        "qty": 1,
+        "supplier": "Siemens"
+      }
+    ],
+    "technician_notes": "Contactor burnt.",
+    "root_cause_recorded": "Contactor failure",
+    "incident_id": "MX-0173",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-06-02T08:30:00+05:30",
+    "machine_id": "AC-01",
+    "line": "Utilities",
+    "system": "pneumatic",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "pressure switch hunting"
+    ],
+    "error_codes": [
+      "AIR-PSW"
+    ],
+    "downtime_minutes": 25,
+    "production_loss_units": 0,
+    "fix_applied": "Recalibrated pressure switch",
+    "fix_category": "sensor_recal",
+    "parts_used": [],
+    "technician_notes": "Drifted setpoint.",
+    "root_cause_recorded": "Pressure switch drift",
+    "incident_id": "MX-0176",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-06-05T19:40:00+05:30",
+    "machine_id": "CNC-11",
+    "line": "Machining Bay",
+    "system": "tooling",
+    "shift": "B",
+    "reported_by": "Anil Gaikwad",
+    "symptoms": [
+      "tool changer arm misindex"
+    ],
+    "error_codes": [
+      "ATC-IDX"
+    ],
+    "downtime_minutes": 60,
+    "production_loss_units": 140,
+    "fix_applied": "Re-taught tool changer reference position",
+    "fix_category": "sensor_recal",
+    "parts_used": [],
+    "technician_notes": "Crash during setup moved reference.",
+    "root_cause_recorded": "ATC reference lost",
+    "incident_id": "MX-0179",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-06-08T23:15:00+05:30",
+    "machine_id": "CV-01",
+    "line": "Assembly",
+    "system": "conveyor",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": [
+      "photo-eye missing parts at count station"
+    ],
+    "error_codes": [
+      "CNV-PE"
+    ],
+    "downtime_minutes": 15,
+    "production_loss_units": 0,
+    "fix_applied": "Cleaned and realigned photo-eye",
+    "fix_category": "sensor_recal",
+    "parts_used": [],
+    "technician_notes": "Dust on lens.",
+    "root_cause_recorded": "Photo-eye dirty",
+    "incident_id": "MX-0182",
+    "kind": "incident"
+  },
+  {
+    "timestamp": "2026-06-10T13:20:00+05:30",
+    "machine_id": "IM-03",
+    "line": "Plastics",
+    "system": "injection",
+    "shift": "A",
+    "reported_by": "Imran Shaikh",
+    "symptoms": [
+      "sink marks on thick section"
+    ],
+    "error_codes": [
+      "QLT-SINK"
+    ],
+    "downtime_minutes": 35,
+    "production_loss_units": 600,
+    "fix_applied": "Increased hold pressure time by 1.5s",
+    "fix_category": "process_adjust",
+    "parts_used": [],
+    "technician_notes": "New resin lot.",
+    "root_cause_recorded": "Process parameter",
+    "incident_id": "MX-0185",
+    "kind": "incident"
+  }
+]

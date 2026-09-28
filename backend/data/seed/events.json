@@ -1,0 +1,116 @@
+[
+  {
+    "event_id": "EV-OIL-0105",
+    "kind": "oil_fill",
+    "timestamp": "2026-01-05T10:00:00+05:30",
+    "machine_id": "HP-04",
+    "supplier": "Indo Hydraulics Oils",
+    "batch": "IH-2401",
+    "qty_litres": 60,
+    "note": "Scheduled top-up, HP-04"
+  },
+  {
+    "event_id": "EV-OIL-0112",
+    "kind": "oil_fill",
+    "timestamp": "2026-01-12T10:30:00+05:30",
+    "machine_id": "HP-02",
+    "supplier": "Indo Hydraulics Oils",
+    "batch": "IH-2401",
+    "qty_litres": 40,
+    "note": "Scheduled top-up, HP-02"
+  },
+  {
+    "event_id": "EV-OIL-0210",
+    "kind": "oil_fill",
+    "timestamp": "2026-02-10T11:00:00+05:30",
+    "machine_id": "HP-06",
+    "supplier": "Indo Hydraulics Oils",
+    "batch": "IH-2402",
+    "qty_litres": 200,
+    "note": "Full oil change during annual overhaul, HP-06"
+  },
+  {
+    "event_id": "EV-PWR-0122",
+    "kind": "power_event",
+    "timestamp": "2026-01-22T03:05:00+05:30",
+    "machines_affected": [
+      "HP-04",
+      "AC-01",
+      "CV-01"
+    ],
+    "note": "Plant-wide voltage dip from MSEDCL supply at 03:05. HP-04, AC-01 and CV-01 tripped. All restarted by 04:40."
+  },
+  {
+    "event_id": "EV-SUP-0214",
+    "kind": "supplier_change",
+    "timestamp": "2026-02-14T15:00:00+05:30",
+    "material": "Hydraulic oil ISO VG 68",
+    "from_supplier": "Indo Hydraulics Oils",
+    "to_supplier": "Vardhan Lubricants",
+    "note": "Procurement switched hydraulic oil supplier to Vardhan Lubricants. Cost saving 22% per litre. Approved by Priya Deshmukh (Stores & Procurement)."
+  },
+  {
+    "event_id": "EV-OIL-0220",
+    "kind": "oil_fill",
+    "timestamp": "2026-02-20T09:30:00+05:30",
+    "machine_id": "HP-04",
+    "supplier": "Vardhan Lubricants",
+    "batch": "VL-2402-A",
+    "qty_litres": 80,
+    "note": "Top-up after filter change, HP-04. First use of Vardhan oil."
+  },
+  {
+    "event_id": "EV-OIL-0315",
+    "kind": "oil_fill",
+    "timestamp": "2026-03-15T10:15:00+05:30",
+    "machine_id": "HP-02",
+    "supplier": "Vardhan Lubricants",
+    "batch": "VL-2403-B",
+    "qty_litres": 70,
+    "note": "Top-up, HP-02"
+  },
+  {
+    "event_id": "EV-OIL-0330",
+    "kind": "oil_fill",
+    "timestamp": "2026-03-30T10:00:00+05:30",
+    "machine_id": "HP-06",
+    "supplier": "Indo Hydraulics Oils",
+    "batch": "IH-2402",
+    "qty_litres": 30,
+    "note": "Top-up from remaining old stock, HP-06"
+  },
+  {
+    "event_id": "EV-OIL-0402",
+    "kind": "oil_fill",
+    "timestamp": "2026-04-02T23:59:00+05:30",
+    "machine_id": "HP-04",
+    "supplier": "Vardhan Lubricants",
+    "batch": "VL-2403-B",
+    "qty_litres": 180,
+    "note": "Full flush and refill during incident, HP-04"
+  },
+  {
+    "event_id": "EV-OIL-0521",
+    "kind": "oil_fill",
+    "timestamp": "2026-05-21T02:30:00+05:30",
+    "machine_id": "HP-04",
+    "supplier": "Vardhan Lubricants",
+    "batch": "VL-2405-A",
+    "qty_litres": 40,
+    "note": "Top-up during relief valve change, HP-04"
+  },
+  {
+    "event_id": "EV-NOTE-0418",
+    "kind": "handover_note",
+    "timestamp": "2026-04-18T17:00:00+05:30",
+    "author": "Deepak Jadhav",
+    "note": "Handover before retirement: HP-04 running hot lately, not sure why. Fan was fine when I checked. HP-06 is the healthiest press we have."
+  },
+  {
+    "event_id": "EV-NOTE-0101",
+    "kind": "plant_note",
+    "timestamp": "2026-01-01T09:00:00+05:30",
+    "author": "Sunita Kulkarni",
+    "note": "Shift C (10pm-6am) runs continuous high-volume stamping on Line 1 for the two-wheeler bracket order. Presses run their longest uninterrupted cycles on Shift C."
+  }
+]

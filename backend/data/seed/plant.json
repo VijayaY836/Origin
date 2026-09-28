@@ -1,0 +1,28 @@
+{
+  "plant_name": "Sahyadri Precision Components",
+  "location": "Chakan, Pune",
+  "bank_id": "origin-sahyadri-chakan",
+  "demo_date": "2026-06-12",
+  "downtime_cost_per_hour_inr": 200000,
+  "shifts": {"A": "6am–2pm", "B": "2pm–10pm", "C": "10pm–6am"},
+  "machines": [
+    {"id": "HP-02", "type": "250-ton Hydraulic Press", "line": "Stamping Line 1", "system": "hydraulic"},
+    {"id": "HP-04", "type": "400-ton Hydraulic Press", "line": "Stamping Line 1", "system": "hydraulic"},
+    {"id": "HP-06", "type": "250-ton Hydraulic Press", "line": "Stamping Line 2", "system": "hydraulic"},
+    {"id": "CNC-11", "type": "CNC Vertical Machining Center", "line": "Machining Bay", "system": "spindle"},
+    {"id": "CNC-12", "type": "CNC Vertical Machining Center", "line": "Machining Bay", "system": "spindle"},
+    {"id": "IM-03", "type": "Injection Molding Machine", "line": "Plastics", "system": "injection"},
+    {"id": "CV-01", "type": "Main Conveyor", "line": "Assembly", "system": "conveyor"},
+    {"id": "AC-01", "type": "Air Compressor", "line": "Utilities", "system": "pneumatic"}
+  ],
+  "people": {
+    "Ramesh Patil": "Shift C lead technician",
+    "Sunita Kulkarni": "Maintenance Manager",
+    "Imran Shaikh": "Shift A technician",
+    "Kavita Pawar": "Shift A technician",
+    "Sunil More": "Shift B technician",
+    "Anil Gaikwad": "Shift B technician",
+    "Deepak Jadhav": "Senior technician (retired April 2026)",
+    "Priya Deshmukh": "Stores & Procurement"
+  }
+}

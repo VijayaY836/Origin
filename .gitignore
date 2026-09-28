@@ -1,0 +1,12 @@
+# secrets
+backend/.env
+# runtime
+backend/data/ledger.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+# frontend
+frontend/node_modules/
+frontend/dist/
+.DS_Store

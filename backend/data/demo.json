@@ -1,0 +1,50 @@
+{
+  "today_incident": {
+    "incident_id": "MX-0218",
+    "kind": "incident",
+    "timestamp": "2026-06-12T23:15:00+05:30",
+    "machine_id": "HP-04",
+    "line": "Stamping Line 1",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": ["oil temperature 74°C (normal 45–55°C)", "cycle time +20%", "relief valve noise"],
+    "error_codes": ["HYD-TEMP-HI", "PRV-NOISE"],
+    "downtime_minutes": 0,
+    "production_loss_units": 0,
+    "fix_applied": null,
+    "fix_category": null,
+    "parts_used": [],
+    "technician_notes": "Line 1 stopped. Same overheating as last month. Oil temperature climbing within 40 minutes of restart.",
+    "root_cause_recorded": null
+  },
+  "followup_oil_fill": {
+    "event_id": "EV-OIL-0618",
+    "kind": "oil_fill",
+    "timestamp": "2026-06-18T10:00:00+05:30",
+    "machine_id": "HP-06",
+    "supplier": "Vardhan Lubricants",
+    "batch": "VL-2406-A",
+    "qty_litres": 60,
+    "note": "Top-up, HP-06. Old Indo Hydraulics stock finished, first Vardhan oil on this press."
+  },
+  "followup_incident": {
+    "incident_id": "MX-0221",
+    "kind": "incident",
+    "timestamp": "2026-06-19T02:40:00+05:30",
+    "machine_id": "HP-06",
+    "line": "Stamping Line 2",
+    "system": "hydraulic",
+    "shift": "C",
+    "reported_by": "Ramesh Patil",
+    "symptoms": ["oil temperature 61°C, up 9°C from usual", "no alarm yet, press still running"],
+    "error_codes": ["HYD-TEMP-WARN"],
+    "downtime_minutes": 0,
+    "production_loss_units": 0,
+    "fix_applied": null,
+    "fix_category": null,
+    "parts_used": [],
+    "technician_notes": "Early warning only. HP-06 normally runs at 52°C.",
+    "root_cause_recorded": null
+  }
+}
